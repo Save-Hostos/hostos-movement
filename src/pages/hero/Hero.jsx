@@ -33,7 +33,7 @@ export default function Hero() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
-                to="/hostos-movement/gallery"
+                to="/gallery"
                 className="rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6 text-white shadow-sm border border-white hover:bg-orange hover:border-orange ease-in transition duration-200"
                 onClick={scrollToTop}
               >

@@ -10,11 +10,7 @@ const Footer = () => {
     <footer className="bg-gray-900" aria-labelledby="footer-heading">
       <div className="flex flex-col items-center sm:flex-row sm:items-center sm:justify-between mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8 lg:py-32">
         <div className="flex items-center">
-          <Link
-            to="/hostos-movement/"
-            className="-m-1.5 p-1.5"
-            onClick={scrollToTop}
-          >
+          <Link to="/" className="-m-1.5 p-1.5" onClick={scrollToTop}>
             <img
               className="h-24 w-auto"
               src="../src/assets/logo/hostos-white.png"

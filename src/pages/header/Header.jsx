@@ -4,15 +4,15 @@ import PropTypes from "prop-types";
 import { Link, useLocation } from "react-router-dom";
 
 const navigation = [
-  { name: "Home", href: "/hostos-movement/" },
-  { name: "Gallery", href: "/hostos-movement/gallery" },
-  { name: "Story", href: "/hostos-movement/story" },
-  { name: "Gerald Meyer", href: "/hostos-movement/gerald" },
+  { name: "Home", href: "/" },
+  { name: "Gallery", href: "gallery" },
+  { name: "Story", href: "story" },
+  { name: "Gerald Meyer", href: "gerald" },
 ];
 
 const Header = ({ setMobileMenuOpen, mobileMenuOpen }) => {
   const location = useLocation();
-  const isRootPath = location.pathname === "/hostos-movement/";
+  const isRootPath = location.pathname === "/";
   const headerClass = isRootPath ? "" : "bg-gray-900";
 
   return (
@@ -24,7 +24,7 @@ const Header = ({ setMobileMenuOpen, mobileMenuOpen }) => {
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            <Link to="/hostos-movement/" className="-m-1.5 p-1.5">
+            <Link to="/" className="-m-1.5 p-1.5">
               <div className="flex items-center">
                 <img
                   className="h-24 w-auto"
