@@ -4,15 +4,15 @@ import PropTypes from "prop-types";
 import { Link, useLocation } from "react-router-dom";
 
 const navigation = [
-  { name: "Home", href: "/" },
-  { name: "Gallery", href: "/gallery" },
-  { name: "Story", href: "/story" },
-  { name: "Gerald Meyer", href: "/gerald" },
+  { name: "Home", href: "/hostos-movement/" },
+  { name: "Gallery", href: "/hostos-movement/gallery" },
+  { name: "Story", href: "/hostos-movement/story" },
+  { name: "Gerald Meyer", href: "/hostos-movement/gerald" },
 ];
 
 const Header = ({ setMobileMenuOpen, mobileMenuOpen }) => {
   const location = useLocation();
-  const isRootPath = location.pathname === "/";
+  const isRootPath = location.pathname === "/hostos-movement/";
   const headerClass = isRootPath ? "" : "bg-gray-900";
 
   return (
@@ -24,7 +24,7 @@ const Header = ({ setMobileMenuOpen, mobileMenuOpen }) => {
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            <Link to="/" className="-m-1.5 p-1.5">
+            <Link to="/hostos-movement/" className="-m-1.5 p-1.5">
               <div className="flex items-center">
                 <img
                   className="h-24 w-auto"
@@ -66,7 +66,7 @@ const Header = ({ setMobileMenuOpen, mobileMenuOpen }) => {
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <Link to="/" className="-m-1.5 p-1.5">
+              <Link to="/hostos-movement/" className="-m-1.5 p-1.5">
                 <div className="flex items-center">
                   <img
                     className="h-24 w-auto"
@@ -90,7 +90,7 @@ const Header = ({ setMobileMenuOpen, mobileMenuOpen }) => {
                   {navigation.map((item) => (
                     <Link
                       key={item.name}
-                      to={item.href}
+                      to={`/hostos-movement/${item.href}`}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:text-orange  ease-in transition duration-200"
                       onClick={() => setMobileMenuOpen(false)}
                     >

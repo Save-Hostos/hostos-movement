@@ -14,11 +14,11 @@ import Gerald from "../pages/gerald/Gerald";
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<Root />}>
+      <Route path="/hostos-movement/" element={<Root />}>
         <Route index element={<Landing />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/story" element={<Story />} />
-        <Route path="/gerald" element={<Gerald />} />
+        <Route path="/hostos-movement/gallery" element={<Gallery />} />
+        <Route path="/hostos-movement/story" element={<Story />} />
+        <Route path="/hostos-movement/gerald" element={<Gerald />} />
       </Route>
     )
   );

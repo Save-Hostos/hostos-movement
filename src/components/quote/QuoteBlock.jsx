@@ -56,7 +56,7 @@ const QuoteBlock = () => {
             <figcaption className="mt-8 text-base flex justify-between items-center">
               <div className="font-semibold text-white">Gerald Meyer</div>
               <Link
-                to="/gerald"
+                to="/hostos-movement/gerald"
                 className="rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6  text-white shadow-sm border border-white hover:bg-orange hover:border-orange ease-in transition duration-200"
                 onClick={scrollToTop}
               >
