@@ -10,7 +10,7 @@ export default function Hero() {
     <div className="relative overflow-hidden bg-gray-900 min-h-screen flex flex-col justify-center sm:pb-20">
       {/* Video as the background */}
       <video
-        src="../src/assets/video/Hostos-Collection-compressed.mp4"
+        src="assets/video/Hostos-Collection-compressed.mp4"
         alt="Collection Video"
         className="absolute inset-0 z-0 h-full w-full object-cover"
         muted

@@ -5,7 +5,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33821503",
-    imagePath: "../src/assets/images/Shirley-Chisholm.jpg",
+    imagePath: "assets/images/Shirley-Chisholm.jpg",
   },
   {
     Name: "500 Building",
@@ -13,7 +13,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811461",
-    imagePath: "../src/assets/images/500Bldg.jpg",
+    imagePath: "assets/images/500Bldg.jpg",
   },
   {
     Name: "Hostos X-ray Hell No We Won’t Close",
@@ -21,7 +21,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811735",
-    imagePath: "../src/assets/images/HostosX.jpg",
+    imagePath: "assets/images/HostosX.jpg",
   },
   {
     Name: "Baseball Team",
@@ -29,7 +29,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811594",
-    imagePath: "../src/assets/images/HostosBaseball.jpg",
+    imagePath: "assets/images/HostosBaseball.jpg",
   },
   {
     Name: "Hostos Basketball",
@@ -37,7 +37,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811592",
-    imagePath: "../src/assets/images/HostosBasketball.jpg",
+    imagePath: "assets/images/HostosBasketball.jpg",
   },
   {
     Name: "Tito Puente",
@@ -45,7 +45,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811526",
-    imagePath: "../src/assets/images/Tito.jpg",
+    imagePath: "assets/images/Tito.jpg",
   },
   {
     Name: "Student Group Shot by the Parking Meter",
@@ -53,7 +53,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811686",
-    imagePath: "../src/assets/images/GroupMeter.jpg",
+    imagePath: "assets/images/GroupMeter.jpg",
   },
   {
     Name: "Magda Group Shot",
@@ -61,7 +61,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811885",
-    imagePath: "../src/assets/images/MagdaGroup.jpg",
+    imagePath: "assets/images/MagdaGroup.jpg",
   },
   {
     Name: "Marta Rivera Classroom",
@@ -69,7 +69,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811851",
-    imagePath: "../src/assets/images/MartaClassroom.jpg",
+    imagePath: "assets/images/MartaClassroom.jpg",
   },
   {
     Name: "Bicentennial Hostos March",
@@ -77,7 +77,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811730",
-    imagePath: "../src/assets/images/BiMarch.jpg",
+    imagePath: "assets/images/BiMarch.jpg",
   },
   {
     Name: "Spanish March 149th",
@@ -85,7 +85,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811454",
-    imagePath: "../src/assets/images/SpanishMarch.jpg",
+    imagePath: "assets/images/SpanishMarch.jpg",
   },
   {
     Name: "United 500 March with Peter Roman",
@@ -93,7 +93,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811451",
-    imagePath: "../src/assets/images/United500.jpg",
+    imagePath: "assets/images/United500.jpg",
   },
   {
     Name: "Give Us More to Learn March",
@@ -101,7 +101,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811749",
-    imagePath: "../src/assets/images/GiveUsMarch.jpg",
+    imagePath: "assets/images/GiveUsMarch.jpg",
   },
   {
     Name: "Taw Kwon Do",
@@ -109,7 +109,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/stable/community.33811749",
     href: "https://www.jstor.org/stable/community.33811597",
-    imagePath: "../src/assets/images/Taw.jpg",
+    imagePath: "assets/images/Taw.jpg",
   },
   {
     Name: "Serrano’s Speech Outside 475 Building",
@@ -117,7 +117,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811733",
-    imagePath: "../src/assets/images/SerranoSpeech.jpg",
+    imagePath: "assets/images/SerranoSpeech.jpg",
   },
   {
     Name: "Dignitaries Faculty",
@@ -125,7 +125,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811762",
-    imagePath: "../src/assets/images/TwoFalc.jpg",
+    imagePath: "assets/images/TwoFalc.jpg",
   },
   {
     Name: "Student in Leopard Print",
@@ -133,7 +133,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811902",
-    imagePath: "../src/assets/images/LeoPrint.jpg",
+    imagePath: "assets/images/LeoPrint.jpg",
   },
   {
     Name: "Colgate Float",
@@ -141,7 +141,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811693",
-    imagePath: "../src/assets/images/ColgateFloat.jpg",
+    imagePath: "assets/images/ColgateFloat.jpg",
   },
   {
     Name: "Performers",
@@ -149,7 +149,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811505",
-    imagePath: "../src/assets/images/Performers.jpg",
+    imagePath: "assets/images/Performers.jpg",
   },
   {
     Name: "Linda Anderson and Peter Roman",
@@ -157,7 +157,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811879",
-    imagePath: "../src/assets/images/Linda.jpg",
+    imagePath: "assets/images/Linda.jpg",
   },
   {
     Name: "Ribbon Cutting with Dignitaries",
@@ -165,7 +165,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811838",
-    imagePath: "../src/assets/images/Ribbon.jpg",
+    imagePath: "assets/images/Ribbon.jpg",
   },
   {
     Name: "Savoy Containers",
@@ -173,7 +173,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811540",
-    imagePath: "../src/assets/images/Containers.jpg",
+    imagePath: "assets/images/Containers.jpg",
   },
   {
     Name: "Women at the Post Office",
@@ -181,7 +181,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811588",
-    imagePath: "../src/assets/images/PostOffice.jpg",
+    imagePath: "assets/images/PostOffice.jpg",
   },
   {
     Name: "Preciado",
@@ -189,7 +189,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811881",
-    imagePath: "../src/assets/images/Preciado.jpg",
+    imagePath: "assets/images/Preciado.jpg",
   },
   {
     Name: "Mancuso Edwards",
@@ -197,7 +197,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811805",
-    imagePath: "../src/assets/images/MancusoEdwards.jpg",
+    imagePath: "assets/images/MancusoEdwards.jpg",
   },
   {
     Name: "Group Faculty Shot",
@@ -205,7 +205,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811464",
-    imagePath: "../src/assets/images/FacultyShot.jpg",
+    imagePath: "assets/images/FacultyShot.jpg",
   },
   {
     Name: "Students with Certificates",
@@ -213,7 +213,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811691",
-    imagePath: "../src/assets/images/Certificates.jpg",
+    imagePath: "assets/images/Certificates.jpg",
   },
   {
     Name: "Dominican Student Group",
@@ -221,7 +221,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811843",
-    imagePath: "../src/assets/images/Dominican.jpg",
+    imagePath: "assets/images/Dominican.jpg",
   },
   {
     Name: "Concourse Graduation",
@@ -229,7 +229,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811695",
-    imagePath: "../src/assets/images/Graduation.jpg",
+    imagePath: "assets/images/Graduation.jpg",
   },
   {
     Name: "Savoy Construction",
@@ -237,7 +237,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811760",
-    imagePath: "../src/assets/images/Savoy.jpg",
+    imagePath: "assets/images/Savoy.jpg",
   },
   {
     Name: "Pres and Wally",
@@ -245,7 +245,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811545",
-    imagePath: "../src/assets/images/Pres.jpg",
+    imagePath: "assets/images/Pres.jpg",
   },
   {
     Name: "500 Building Aerial View",
@@ -253,7 +253,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811582",
-    imagePath: "../src/assets/images/Aerial.jpg",
+    imagePath: "assets/images/Aerial.jpg",
   },
   {
     Name: "President, Tito, and Ferrer",
@@ -261,7 +261,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33821528",
-    imagePath: "../src/assets/images/President.jpg",
+    imagePath: "assets/images/President.jpg",
   },
   {
     Name: "Bridge Construction on Grand Concourse",
@@ -269,7 +269,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811752",
-    imagePath: "../src/assets/images/Construction.jpg",
+    imagePath: "assets/images/Construction.jpg",
   },
   {
     Name: "Jose Diaz",
@@ -277,7 +277,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811915",
-    imagePath: "../src/assets/images/Jose.jpg",
+    imagePath: "assets/images/Jose.jpg",
   },
   {
     Name: "500 Building Demonstration",
@@ -285,7 +285,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811455",
-    imagePath: "../src/assets/images/Demonstration.jpg",
+    imagePath: "assets/images/Demonstration.jpg",
   },
   {
     Name: "Ribbon Cutting for Hostos Bridge",
@@ -293,7 +293,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811869",
-    imagePath: "../src/assets/images/RibbonHostos.jpg",
+    imagePath: "assets/images/RibbonHostos.jpg",
   },
   {
     Name: "Street Shot 149th Hostos",
@@ -301,7 +301,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811542",
-    imagePath: "../src/assets/images/Street.jpg",
+    imagePath: "assets/images/Street.jpg",
   },
   {
     Name: "Dental Hygiene Lab",
@@ -309,7 +309,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811839",
-    imagePath: "../src/assets/images/Dental.jpg",
+    imagePath: "assets/images/Dental.jpg",
   },
   {
     Name: "Art Group with Wally",
@@ -317,7 +317,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811761",
-    imagePath: "../src/assets/images/Art.jpg",
+    imagePath: "assets/images/Art.jpg",
   },
   {
     Name: "Martorell with Santiago",
@@ -325,7 +325,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811790",
-    imagePath: "../src/assets/images/Martorell.jpg",
+    imagePath: "assets/images/Martorell.jpg",
   },
   {
     Name: "Student and their baby",
@@ -333,7 +333,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811495",
-    imagePath: "../src/assets/images/baby.jpg",
+    imagePath: "assets/images/baby.jpg",
   },
   {
     Name: "Bench at 475",
@@ -341,7 +341,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811586",
-    imagePath: "../src/assets/images/475Bench.jpg",
+    imagePath: "assets/images/475Bench.jpg",
   },
   {
     Name: "Library Card Catalogue",
@@ -349,7 +349,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811475",
-    imagePath: "../src/assets/images/Library.jpg",
+    imagePath: "assets/images/Library.jpg",
   },
   {
     Name: "Bette Kerr and Pat P",
@@ -357,7 +357,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811560",
-    imagePath: "../src/assets/images/Bette.jpg",
+    imagePath: "assets/images/Bette.jpg",
   },
   {
     Name: "Student Celebration",
@@ -365,7 +365,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811688",
-    imagePath: "../src/assets/images/hugging.jpg",
+    imagePath: "assets/images/hugging.jpg",
   },
   {
     Name: "Badillo",
@@ -373,7 +373,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811608",
-    imagePath: "../src/assets/images/Badillo.jpg",
+    imagePath: "assets/images/Badillo.jpg",
   },
   {
     Name: "Orlando and friends",
@@ -381,7 +381,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811466",
-    imagePath: "../src/assets/images/Orlando.jpg",
+    imagePath: "assets/images/Orlando.jpg",
   },
   {
     Name: "Isabel Li Advising Students",
@@ -389,7 +389,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "",
-    imagePath: "../src/assets/images/Isabel.jpg",
+    imagePath: "assets/images/Isabel.jpg",
   },
   {
     Name: "Student Protest at Bronx County Bldg",
@@ -397,7 +397,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811720",
-    imagePath: "../src/assets/images/ProtestBronx.jpg",
+    imagePath: "assets/images/ProtestBronx.jpg",
   },
   {
     Name: "Bicentennial with Hostos March",
@@ -405,7 +405,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811730",
-    imagePath: "../src/assets/images/BicentennialMarch.jpg",
+    imagePath: "assets/images/BicentennialMarch.jpg",
   },
   {
     Name: "Library Staff with Jose Diaz",
@@ -413,7 +413,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811857",
-    imagePath: "../src/assets/images/LibraryStaff.jpg",
+    imagePath: "assets/images/LibraryStaff.jpg",
   },
   {
     Name: "Koch and Hostos President",
@@ -421,7 +421,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811813",
-    imagePath: "../src/assets/images/Koch.jpg",
+    imagePath: "assets/images/Koch.jpg",
   },
   {
     Name: "Mbabuike",
@@ -429,7 +429,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811494",
-    imagePath: "../src/assets/images/Mbabuike.jpg",
+    imagePath: "assets/images/Mbabuike.jpg",
   },
   {
     Name: "Library Computer Terminals",
@@ -437,7 +437,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811557",
-    imagePath: "../src/assets/images/Terminals.jpg",
+    imagePath: "assets/images/Terminals.jpg",
   },
   {
     Name: "Jerry Meyer",
@@ -445,7 +445,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811462",
-    imagePath: "../src/assets/images/JerryMeyer.jpg",
+    imagePath: "assets/images/JerryMeyer.jpg",
   },
   {
     Name: "Public Safety",
@@ -453,7 +453,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811763",
-    imagePath: "../src/assets/images/publicsafety.jpg",
+    imagePath: "assets/images/publicsafety.jpg",
   },
   {
     Name: "Chase Manhattan",
@@ -461,7 +461,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811754",
-    imagePath: "../src/assets/images/Chase.jpg",
+    imagePath: "assets/images/Chase.jpg",
   },
   {
     Name: "Children of Students",
@@ -469,7 +469,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811736",
-    imagePath: "../src/assets/images/Children.jpg",
+    imagePath: "assets/images/Children.jpg",
   },
   {
     Name: "March thru East Harlem",
@@ -477,7 +477,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811732",
-    imagePath: "../src/assets/images/EastHarlem.jpg",
+    imagePath: "assets/images/EastHarlem.jpg",
   },
   {
     Name: "Mancuso Edwards with Serrano",
@@ -485,7 +485,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811490",
-    imagePath: "../src/assets/images/Mancuso.jpg",
+    imagePath: "assets/images/Mancuso.jpg",
   },
   {
     Name: "Students Posing at Event",
@@ -493,7 +493,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811893",
-    imagePath: "../src/assets/images/Posing.jpg",
+    imagePath: "assets/images/Posing.jpg",
   },
   {
     Name: "Serrano and Koch",
@@ -501,7 +501,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811627",
-    imagePath: "../src/assets/images/SerranoandKoch.jpg",
+    imagePath: "assets/images/SerranoandKoch.jpg",
   },
   {
     Name: "Students with Bette Kerr",
@@ -509,7 +509,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811499",
-    imagePath: "../src/assets/images/BetteKerr.jpg",
+    imagePath: "assets/images/BetteKerr.jpg",
   },
   {
     Name: "Classroom Scene",
@@ -517,7 +517,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811707",
-    imagePath: "../src/assets/images/classroomScene.jpg",
+    imagePath: "assets/images/classroomScene.jpg",
   },
   {
     Name: "Photography Lab",
@@ -525,7 +525,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811849",
-    imagePath: "../src/assets/images/PhotographyLab.jpg",
+    imagePath: "assets/images/PhotographyLab.jpg",
   },
   {
     Name: "Saw Horse",
@@ -533,7 +533,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811749",
-    imagePath: "../src/assets/images/SawHorse.jpg",
+    imagePath: "assets/images/SawHorse.jpg",
   },
   {
     Name: "500 Building with poster and chain link",
@@ -541,7 +541,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811737",
-    imagePath: "../src/assets/images/chainlink.jpg",
+    imagePath: "assets/images/chainlink.jpg",
   },
   {
     Name: "Students with Window and Bridge",
@@ -549,7 +549,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811543",
-    imagePath: "../src/assets/images/WindowBridge.jpg",
+    imagePath: "assets/images/WindowBridge.jpg",
   },
   {
     Name: "Nurses with Plaques",
@@ -557,7 +557,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811835",
-    imagePath: "../src/assets/images/NursesPlaques.jpg",
+    imagePath: "assets/images/NursesPlaques.jpg",
   },
   {
     Name: "Faculty with Cynthia",
@@ -565,7 +565,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811876",
-    imagePath: "../src/assets/images/Cynthia.jpg",
+    imagePath: "assets/images/Cynthia.jpg",
   },
   {
     Name: "Student Speaker in 475",
@@ -573,7 +573,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811835",
-    imagePath: "../src/assets/images/Speaker475.jpg",
+    imagePath: "assets/images/Speaker475.jpg",
   },
   {
     Name: "Faculty",
@@ -581,7 +581,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811766",
-    imagePath: "../src/assets/images/GroupFaculty1.jpg",
+    imagePath: "assets/images/GroupFaculty1.jpg",
   },
   {
     Name: "Do Not Close Our Home",
@@ -589,7 +589,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811734",
-    imagePath: "../src/assets/images/OurHome.jpg",
+    imagePath: "assets/images/OurHome.jpg",
   },
   {
     Name: "475 Public Plaza with Benches",
@@ -597,7 +597,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33821513",
-    imagePath: "../src/assets/images/PublicPlaza.jpg",
+    imagePath: "assets/images/PublicPlaza.jpg",
   },
   {
     Name: "Struggle for 500 Banner Michangelo",
@@ -605,7 +605,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811713",
-    imagePath: "../src/assets/images/BannerMichangelo.jpg",
+    imagePath: "assets/images/BannerMichangelo.jpg",
   },
   {
     Name: "Celia Cruz and Tito",
@@ -613,7 +613,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811589",
-    imagePath: "../src/assets/images/CeliaCruzTito.jpg",
+    imagePath: "assets/images/CeliaCruzTito.jpg",
   },
   {
     Name: "Downtown Mass Rally",
@@ -621,7 +621,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811463",
-    imagePath: "../src/assets/images/DowntownMass.jpg",
+    imagePath: "assets/images/DowntownMass.jpg",
   },
   {
     Name: "Children with Save Hostos Sign",
@@ -629,7 +629,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811751",
-    imagePath: "../src/assets/images/ChildrenSign.jpg",
+    imagePath: "assets/images/ChildrenSign.jpg",
   },
   {
     Name: "Magda with Santiago",
@@ -637,7 +637,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811679",
-    imagePath: "../src/assets/images/MagdaSantiago.jpg",
+    imagePath: "assets/images/MagdaSantiago.jpg",
   },
   {
     Name: "Group in Library",
@@ -645,7 +645,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811847",
-    imagePath: "../src/assets/images/GroupLibrary.jpg",
+    imagePath: "assets/images/GroupLibrary.jpg",
   },
   {
     Name: "Student Group Boom Boxes",
@@ -653,7 +653,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811687",
-    imagePath: "../src/assets/images/GroupBoomBoxes.jpg",
+    imagePath: "assets/images/GroupBoomBoxes.jpg",
   },
   {
     Name: "149th Street Demonstation",
@@ -661,7 +661,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811711",
-    imagePath: "../src/assets/images/DemonstationStreet.jpg",
+    imagePath: "assets/images/DemonstationStreet.jpg",
   },
   {
     Name: "Aerial Shot Top of Tower",
@@ -669,7 +669,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811581",
-    imagePath: "../src/assets/images/TopofTower.jpg",
+    imagePath: "assets/images/TopofTower.jpg",
   },
   {
     Name: "Celia and Tito",
@@ -677,7 +677,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811521",
-    imagePath: "../src/assets/images/CeliaTito.jpg",
+    imagePath: "assets/images/CeliaTito.jpg",
   },
   {
     Name: "Badillo and Chiesa with Hostos Portrait",
@@ -685,7 +685,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811812",
-    imagePath: "../src/assets/images/BadilloChiesaPortrait.jpg",
+    imagePath: "assets/images/BadilloChiesaPortrait.jpg",
   },
   {
     Name: "Magda,Bernabe,  and Dinkins",
@@ -693,7 +693,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33821501",
-    imagePath: "../src/assets/images/MagdaBernabeDinkins.jpg",
+    imagePath: "assets/images/MagdaBernabeDinkins.jpg",
   },
   {
     Name: "4 Students",
@@ -701,7 +701,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811683",
-    imagePath: "../src/assets/images/4Students.jpg",
+    imagePath: "assets/images/4Students.jpg",
   },
   {
     Name: "Mancuso with Arts and Culture",
@@ -709,7 +709,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811756",
-    imagePath: "../src/assets/images/MancusoArtsCulture.jpg",
+    imagePath: "assets/images/MancusoArtsCulture.jpg",
   },
   {
     Name: "X-ray Protest",
@@ -717,7 +717,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811735",
-    imagePath: "../src/assets/images/X-rayProtest.jpg",
+    imagePath: "assets/images/X-rayProtest.jpg",
   },
   {
     Name: "Concourse closed for Rally Post Office",
@@ -725,7 +725,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811746",
-    imagePath: "../src/assets/images/RallyPostOffice.jpg",
+    imagePath: "assets/images/RallyPostOffice.jpg",
   },
   {
     Name: "Magda with a Torch",
@@ -733,7 +733,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811886",
-    imagePath: "../src/assets/images/MagdaTorch.jpg",
+    imagePath: "assets/images/MagdaTorch.jpg",
   },
   {
     Name: "Students waiting at Financial Aid",
@@ -741,7 +741,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811685",
-    imagePath: "../src/assets/images/FinancialAid.jpg",
+    imagePath: "assets/images/FinancialAid.jpg",
   },
   {
     Name: "David Gomez at the Gala",
@@ -749,7 +749,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811681",
-    imagePath: "../src/assets/images/DavidGala.jpg",
+    imagePath: "assets/images/DavidGala.jpg",
   },
   {
     Name: "Children at Table",
@@ -757,7 +757,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811677",
-    imagePath: "../src/assets/images/ChildrenTable.jpg",
+    imagePath: "assets/images/ChildrenTable.jpg",
   },
   {
     Name: "Theater with Isabel",
@@ -765,7 +765,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811533",
-    imagePath: "../src/assets/images/TheaterIsabel.jpg",
+    imagePath: "assets/images/TheaterIsabel.jpg",
   },
   {
     Name: "Honor Students",
@@ -773,7 +773,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811833",
-    imagePath: "../src/assets/images/HonorStudents.jpg",
+    imagePath: "assets/images/HonorStudents.jpg",
   },
   {
     Name: "Protester Close Up",
@@ -781,7 +781,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811714",
-    imagePath: "../src/assets/images/ProtesterClose.jpg",
+    imagePath: "assets/images/ProtesterClose.jpg",
   },
   {
     Name: "Pat P with Students",
@@ -789,7 +789,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811553",
-    imagePath: "../src/assets/images/PatP.jpg",
+    imagePath: "assets/images/PatP.jpg",
   },
 
   {
@@ -798,7 +798,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811477",
-    imagePath: "../src/assets/images/ProfessorReading.jpg",
+    imagePath: "assets/images/ProfessorReading.jpg",
   },
   {
     Name: "Professor with Student",
@@ -806,7 +806,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811912",
-    imagePath: "../src/assets/images/StudentProfessor.jpg",
+    imagePath: "assets/images/StudentProfessor.jpg",
   },
   {
     Name: "Hostos with Power Test and Castle",
@@ -814,7 +814,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811639",
-    imagePath: "../src/assets/images/CastlePowerHostos.jpg",
+    imagePath: "assets/images/CastlePowerHostos.jpg",
   },
   {
     Name: "Students Hanging Banner 500",
@@ -822,7 +822,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811459",
-    imagePath: "../src/assets/images/HangingBanner500.jpg",
+    imagePath: "assets/images/HangingBanner500.jpg",
   },
   {
     Name: "Stimola with Students",
@@ -830,7 +830,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811900",
-    imagePath: "../src/assets/images/StimolaStudents.jpg",
+    imagePath: "assets/images/StimolaStudents.jpg",
   },
   {
     Name: "Shirley Chishom with Badillo",
@@ -838,7 +838,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811491",
-    imagePath: "../src/assets/images/ChishomBadillo.jpg",
+    imagePath: "assets/images/ChishomBadillo.jpg",
   },
   {
     Name: "Cuomo",
@@ -846,7 +846,7 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811598",
-    imagePath: "../src/assets/images/Cuomo.jpg",
+    imagePath: "assets/images/Cuomo.jpg",
   },
 
   {
@@ -855,6 +855,6 @@ export const data = [
     Date: "1968-2008",
     Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
     href: "https://www.jstor.org/stable/community.33811794",
-    imagePath: "../src/assets/images/ModelNewCampus.jpg",
+    imagePath: "assets/images/ModelNewCampus.jpg",
   },
 ];

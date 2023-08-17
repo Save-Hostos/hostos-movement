@@ -13,7 +13,7 @@ const Footer = () => {
           <Link to="/" className="-m-1.5 p-1.5" onClick={scrollToTop}>
             <img
               className="h-24 w-auto"
-              src="../src/assets/logo/hostos-white.png"
+              src="assets/logo/hostos-white.png"
               alt="Hostos Logo"
             />
           </Link>

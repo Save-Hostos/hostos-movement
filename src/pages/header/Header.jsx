@@ -5,9 +5,9 @@ import { Link, useLocation } from "react-router-dom";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "Gallery", href: "gallery" },
-  { name: "Story", href: "story" },
-  { name: "Gerald Meyer", href: "gerald" },
+  { name: "Gallery", href: "/gallery" },
+  { name: "Story", href: "/story" },
+  { name: "Gerald Meyer", href: "/gerald" },
 ];
 
 const Header = ({ setMobileMenuOpen, mobileMenuOpen }) => {
@@ -28,7 +28,7 @@ const Header = ({ setMobileMenuOpen, mobileMenuOpen }) => {
               <div className="flex items-center">
                 <img
                   className="h-24 w-auto"
-                  src="../src/assets/logo/hostos-white.png"
+                  src="assets/logo/hostos-white.png"
                   alt="Hostos Logo"
                 />
               </div>
@@ -46,13 +46,13 @@ const Header = ({ setMobileMenuOpen, mobileMenuOpen }) => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className="text-md font-semibold leading-6 text-white hover:text-orange ease-in transition duration-200"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
@@ -70,7 +70,7 @@ const Header = ({ setMobileMenuOpen, mobileMenuOpen }) => {
                 <div className="flex items-center">
                   <img
                     className="h-24 w-auto"
-                    src="../src/assets/logo/hostos-white.png"
+                    src="assets/logo/hostos-white.png"
                     alt="Hostos Logo"
                   />
                 </div>

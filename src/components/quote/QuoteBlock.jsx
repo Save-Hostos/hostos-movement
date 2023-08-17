@@ -24,7 +24,7 @@ const QuoteBlock = () => {
           <div className="relative  h-full md:-mx-8 xl:mx-0 xl:aspect-auto aspect-[1/1]">
             <img
               className="absolute inset-0 h-full w-full rounded-full bg-gray-800 object-cover shadow-2xl"
-              src="../src/assets/images/GeraldM.png"
+              src="assets/images/GeraldM.png"
               alt="Gerald Meyer"
             />
           </div>
