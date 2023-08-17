@@ -9,7 +9,7 @@ import Gerald from "../pages/gerald/Gerald";
 function App() {
   return (
     <div className="app bg-[#F5F5F5]">
-      <Router basename="/hostos-movement">
+      <Router basename="/hostos-movement/">
         <Routes>
           <Route path="/" element={<Root />}>
             <Route index element={<Landing />} />
