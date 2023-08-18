@@ -1,10 +1,40 @@
+import { useState, useCallback, useEffect } from "react";
 import { motion } from "framer-motion";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import ImageViewer from "react-simple-image-viewer";
 import { data } from "../../../data";
 
 const Gallery = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+  const [isViewerOpen, setIsViewerOpen] = useState(false);
+
+  const images = data.map(({ imagePath }) => imagePath);
+
+  useEffect(() => {
+    if (isViewerOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto"; // Cleanup to ensure scrolling is re-enabled
+    };
+  }, [isViewerOpen]);
+
+  const openImageViewer = useCallback((index) => {
+    setCurrentImage(index);
+    setIsViewerOpen(true);
+    document.body.style.overflow = "hidden";
+  }, []);
+
+  const closeImageViewer = () => {
+    setCurrentImage(0);
+    setIsViewerOpen(false);
+    document.body.style.overflow = "auto";
+  };
+
   if (!data || data.length === 0) {
     return <div>Loading...</div>;
   }
@@ -31,6 +61,7 @@ const Gallery = () => {
                 effect="blur"
                 width="100%"
                 className="rounded-md"
+                onClick={() => openImageViewer(index)}
               />
               <div
                 className="absolute bottom-0 bg-opacity-60 bg-black text-white p-2 rounded-b-md flex justify-between items-center"
@@ -51,6 +82,16 @@ const Gallery = () => {
           ))}
         </Masonry>
       </ResponsiveMasonry>
+      {isViewerOpen && (
+        <ImageViewer
+          src={images}
+          currentIndex={currentImage}
+          disableScroll={false}
+          closeOnClickOutside={true}
+          onClose={closeImageViewer}
+          backgroundStyle={{ zIndex: 100 }}
+        />
+      )}
     </div>
   );
 };

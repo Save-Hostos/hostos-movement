@@ -6,6 +6,7 @@ import Footer from "../pages/footer/Footer";
 
 function Root() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <>
       {/* HEADER */}
