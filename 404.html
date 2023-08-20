@@ -8,10 +8,22 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/index.jsx"></script>
+    <script type="module" src="/hostos-movement/src/index.jsx"></script>
     <script>
-      var segment = window.location.pathname.split("/").pop();
-      window.location.replace("/hostos-movement/" + segment);
+      (function () {
+        // Get the path segment
+        var segment = window.location.pathname.split("/").pop();
+
+        // Check if the segment matches one of your expected paths
+        if (["gallery", "gerald"].includes(segment)) {
+          // Modify the window's history state to reflect the correct URL
+          window.history.replaceState(
+            null,
+            null,
+            "/hostos-movement/" + segment
+          );
+        }
+      })();
     </script>
   </body>
 </html>
