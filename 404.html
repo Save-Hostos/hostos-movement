@@ -7,17 +7,28 @@
     <title>La Lucha - Save Hostos</title>
   </head>
   <body>
-    <script>
-      (function () {
-        // Extract the path after "/hostos-movement/"
-        var segment = window.location.pathname.split("/hostos-movement/")[1];
-
-        // If the segment matches one of your expected paths
-        if (["gallery", "gerald"].includes(segment)) {
-          // Redirect to the correct URL
-          window.location.replace("/hostos-movement/" + segment);
-        }
-      })();
+    <script type="text/javascript">
+      var pathSegmentsToKeep = 1;
+      var l = window.location;
+      l.replace(
+        l.protocol +
+          "//" +
+          l.hostname +
+          (l.port ? ":" + l.port : "") +
+          l.pathname
+            .split("/")
+            .slice(0, 1 + pathSegmentsToKeep)
+            .join("/") +
+          "/?/" +
+          l.pathname
+            .slice(1)
+            .split("/")
+            .slice(pathSegmentsToKeep)
+            .join("/")
+            .replace(/&/g, "~and~") +
+          (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
+          l.hash
+      );
     </script>
   </body>
 </html>
