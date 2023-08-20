@@ -8,13 +8,13 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/hostos-movement/src/index.jsx"></script>
+    <script type="module" src="/src/index.jsx"></script>
     <script>
       (function () {
-        // Get the path segment
-        var segment = window.location.pathname.split("/").pop();
+        // Extract the path after "/hostos-movement/"
+        var segment = window.location.pathname.split("/hostos-movement/")[1];
 
-        // Check if the segment matches one of your expected paths
+        // If the segment matches one of your expected paths
         if (["gallery", "gerald"].includes(segment)) {
           // Modify the window's history state to reflect the correct URL
           window.history.replaceState(
