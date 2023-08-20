@@ -7,8 +7,6 @@
     <title>La Lucha - Save Hostos</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/index.jsx"></script>
     <script>
       (function () {
         // Extract the path after "/hostos-movement/"
@@ -16,12 +14,8 @@
 
         // If the segment matches one of your expected paths
         if (["gallery", "gerald"].includes(segment)) {
-          // Modify the window's history state to reflect the correct URL
-          window.history.replaceState(
-            null,
-            null,
-            "/hostos-movement/" + segment
-          );
+          // Redirect to the correct URL
+          window.location.replace("/hostos-movement/" + segment);
         }
       })();
     </script>
