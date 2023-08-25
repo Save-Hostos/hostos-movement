@@ -111,7 +111,7 @@ const Gallery = () => {
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs"
+                    className="text-xs font-semibold"
                     aria-label={`View source for ${Name}`}
                     style={{ padding: "4px 8px" }}
                   >
