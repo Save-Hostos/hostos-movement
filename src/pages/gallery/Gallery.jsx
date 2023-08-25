@@ -11,6 +11,7 @@ const Gallery = () => {
   const [isViewerOpen, setIsViewerOpen] = useState(false);
 
   const images = data.map(({ imagePath }) => imagePath);
+  const [filteredData, setFilteredData] = useState([]);
 
   useEffect(() => {
     if (isViewerOpen) {
@@ -22,6 +23,18 @@ const Gallery = () => {
       document.body.style.overflow = "auto"; // Cleanup to ensure scrolling is re-enabled
     };
   }, [isViewerOpen]);
+
+  useEffect(() => {
+    setFilteredData(data.sort(() => Math.random() - 0.5));
+  }, []);
+
+  const filterImages = (filter) => {
+    if (filter === "all") {
+      setFilteredData(data);
+    } else {
+      setFilteredData(data.filter((image) => image.Title === filter));
+    }
+  };
 
   const openImageViewer = useCallback((index) => {
     setCurrentImage(index);
@@ -35,14 +48,43 @@ const Gallery = () => {
     document.body.style.overflow = "auto";
   };
 
+  // Function to smoothly scroll to the top of the page
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   if (!data || data.length === 0) {
     return <div>Loading...</div>;
   }
+
   return (
     <div className="pt-40 md:pt-40 lg:pt-40 mb-[2%] mx-[2%] lg:mx-[5%]">
+      <div className="text-center mb-4">
+        <button
+          onClick={() => filterImages("all")}
+          className="rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6 text-black shadow-sm border border-orange bg-orange hover:text-[#F5F5F5] transition duration-200 hover:bg-opacity-80 mr-2" // Added right margin
+        >
+          All
+        </button>
+        <button
+          onClick={() => filterImages("Magda Vasillov")}
+          className="rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6 text-black shadow-sm border border-orange bg-orange hover:text-[#F5F5F5] transition duration-200 hover:bg-opacity-80 mx-2" // Added right and left margin
+        >
+          Magda Vasillov
+        </button>
+        <button
+          onClick={() => filterImages("Hostos Moments")}
+          className="rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6 text-black shadow-sm border border-orange bg-orange hover:text-[#F5F5F5] transition duration-200 hover:bg-opacity-80 ml-2" // Added left margin
+        >
+          Hostos Moments
+        </button>
+      </div>
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 4 }}>
         <Masonry gutter="16px">
-          {data.map(({ Name, href, imagePath }, index) => (
+          {filteredData.map(({ Name, href, imagePath }, index) => (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -52,31 +94,30 @@ const Gallery = () => {
                 ease: "easeOut",
               }}
               key={index}
-              className="rounded-md relative"
+              className="rounded-md relative cusor:pointer"
               style={{ width: "100%" }}
             >
-              <LazyLoadImage
-                src={imagePath}
-                alt={Name}
-                effect="blur"
-                width="100%"
-                className="rounded-md"
-                onClick={() => openImageViewer(index)}
-              />
-              <div
-                className="absolute bottom-0 bg-opacity-60 bg-black text-white p-2 rounded-b-md flex justify-between items-center"
-                style={{ width: "100%" }}
-              >
-                {Name}
-                <a
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-orange ease-in transition duration-200"
-                  aria-label={`View source for ${Name}`}
-                >
-                  View Source
-                </a>
+              <div className="transform transition-transform duration-200 hover:scale-105">
+                <LazyLoadImage
+                  src={imagePath}
+                  alt={Name}
+                  effect="blur"
+                  width="100%"
+                  className="rounded-md cursor cursor-pointer"
+                  onClick={() => openImageViewer(index)}
+                />
+                <div className="absolute bottom-[1%] right-0 bg-opacity-[75%] bg-black text-white p-2 rounded-md hover:text-orange ease-in transition duration-200">
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs"
+                    aria-label={`View source for ${Name}`}
+                    style={{ padding: "4px 8px" }}
+                  >
+                    View Source
+                  </a>
+                </div>
               </div>
             </motion.div>
           ))}
@@ -92,6 +133,13 @@ const Gallery = () => {
           backgroundStyle={{ zIndex: 100 }}
         />
       )}
+      <button
+        onClick={scrollToTop}
+        className="fixed bottom-4 right-4 p-2 bg-orange text-white rounded-full cursor-pointer"
+        style={{ width: "40px", height: "40px" }}
+      >
+        🡅
+      </button>
     </div>
   );
 };
