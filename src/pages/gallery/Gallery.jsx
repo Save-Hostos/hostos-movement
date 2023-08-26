@@ -10,8 +10,8 @@ const Gallery = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
 
-  const images = data.map(({ imagePath }) => imagePath);
   const [filteredData, setFilteredData] = useState([]);
+  const images = filteredData.map(({ imagePath }) => imagePath);
 
   useEffect(() => {
     if (isViewerOpen) {
@@ -30,9 +30,10 @@ const Gallery = () => {
 
   const filterImages = (filter) => {
     if (filter === "all") {
-      setFilteredData(data);
+      setFilteredData([...data]); // Create a new array to avoid side effects
     } else {
-      setFilteredData(data.filter((image) => image.Title === filter));
+      // Filter the data and create a new array
+      setFilteredData([...data.filter((image) => image.Title === filter)]);
     }
   };
 
