@@ -20,7 +20,7 @@ const Gallery = () => {
       document.body.style.overflow = "auto";
     }
     return () => {
-      document.body.style.overflow = "auto"; // Cleanup to ensure scrolling is re-enabled
+      document.body.style.overflow = "auto";
     };
   }, [isViewerOpen]);
 
@@ -30,7 +30,7 @@ const Gallery = () => {
 
   const filterImages = (filter) => {
     if (filter === "all") {
-      setFilteredData([...data]); // Create a new array to avoid side effects
+      setFilteredData([...data]);
     } else {
       // Filter the data and create a new array
       setFilteredData([...data.filter((image) => image.Title === filter)]);
@@ -66,19 +66,19 @@ const Gallery = () => {
       <div className="text-center mb-4">
         <button
           onClick={() => filterImages("all")}
-          className="rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6 text-black shadow-sm border border-orange bg-orange hover:text-[#F5F5F5] transition duration-200 hover:bg-opacity-80 mr-2" // Added right margin
+          className="rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6 text-black shadow-sm border border-orange bg-orange hover:text-[#F5F5F5] transition duration-200 hover:bg-opacity-80 mr-2"
         >
           All
         </button>
         <button
           onClick={() => filterImages("Magda Vasillov")}
-          className="rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6 text-black shadow-sm border border-orange bg-orange hover:text-[#F5F5F5] transition duration-200 hover:bg-opacity-80 mx-2" // Added right and left margin
+          className="rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6 text-black shadow-sm border border-orange bg-orange hover:text-[#F5F5F5] transition duration-200 hover:bg-opacity-80 mx-2"
         >
           Magda Vasillov
         </button>
         <button
           onClick={() => filterImages("Hostos Moments")}
-          className="rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6 text-black shadow-sm border border-orange bg-orange hover:text-[#F5F5F5] transition duration-200 hover:bg-opacity-80 ml-2" // Added left margin
+          className="rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6 text-black shadow-sm border border-orange bg-orange hover:text-[#F5F5F5] transition duration-200 hover:bg-opacity-80 ml-2"
         >
           Hostos Moments
         </button>
@@ -98,7 +98,7 @@ const Gallery = () => {
               className="rounded-md relative cusor:pointer"
               style={{ width: "100%" }}
             >
-              <div className="transform transition-transform duration-200 hover:scale-105">
+              <div className="transform transition-transform duration-200 lg:hover:scale-105">
                 <LazyLoadImage
                   src={imagePath}
                   alt={Name}
@@ -136,10 +136,10 @@ const Gallery = () => {
       )}
       <button
         onClick={scrollToTop}
-        className="fixed bottom-4 right-4 p-2 bg-orange text-white rounded-full cursor-pointer"
+        className="fixed bottom-4 right-4 p-2 bg-gray-900 text-white rounded-full cursor-pointer"
         style={{ width: "40px", height: "40px" }}
       >
-        🡅
+        ☝️
       </button>
     </div>
   );

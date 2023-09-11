@@ -4,11 +4,6 @@ import Hero from "../hero/Hero";
 import { Link } from "react-router-dom";
 
 function Landing() {
-  // Function to scroll to the top of the page
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
-
   return (
     <>
       {/* Hero section */}
@@ -37,14 +32,14 @@ function Landing() {
                 resolve. The movement profoundly shaped Hostos' culture of
                 activism and coalition-building for access and justice.
               </p>
-              <Link
-                to="https://cdha.cuny.edu/collections/show/172"
+              <a
+                href="https://cdha.cuny.edu/collections/show/172"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6 text-black shadow-sm border border-orange bg-orange hover:text-[#F5F5F5] transition duration-200 hover:bg-opacity-80"
-                onClick={scrollToTop}
               >
                 Read The Story
-              </Link>
+              </a>
             </div>
 
             <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
