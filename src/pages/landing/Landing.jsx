@@ -10,14 +10,15 @@ import "slick-carousel/slick/slick-theme.css";
 function Landing() {
   const settings = {
     arrows: false,
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
-    pauseOnHover: true,
+    autoplaySpeed: 9500,
+    pauseOnHover: false,
+    fade: true,
   };
   return (
     <>
@@ -98,14 +99,15 @@ function Landing() {
         </div>
       </div>
       {/* Quote section */}
-      <div className="z-1">
+      <div>
         <Slider {...settings}>
           <QuoteBlock />
+
           <MagdaQuoteBlock />
         </Slider>
       </div>
       <div className="px-6 py-24 sm:py-32 lg:px-8">
-        <div className="mx-auto text-center">
+        <div className="mx-auto text-center mt-[-100px]">
           <h2
             className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl xl:text-6xl"
             style={{ maxWidth: "100%" }}
@@ -113,7 +115,7 @@ function Landing() {
             Thank you!
           </h2>
           <div className="max-w-2xl mx-auto">
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-xl leading-8 text-gray-600">
               Educating for Diversity Grant made possible by the Ms. MacKenzie
               Scott's Gift: President's Initiatives.
             </p>

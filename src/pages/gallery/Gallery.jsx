@@ -31,22 +31,25 @@ const Gallery = () => {
   }, [isViewerOpen]);
 
   useEffect(() => {
-    setFilteredData(data.sort(() => Math.random() - 0.5));
+    setFilteredData([...data]);
   }, []);
 
   useEffect(() => {
     navigate(".", { replace: true, state: currentFilter });
   }, [currentFilter, navigate]);
 
-  const filterImages = (filter) => {
-    setCurrentFilter(filter);
+  useEffect(() => {
+    const filter = location.state ? location.state : "all";
     if (filter === "all") {
       setFilteredData([...data]);
     } else {
-      // Filter the data and create a new array
       setFilteredData([...data.filter((image) => image.Title === filter)]);
     }
-  };
+  }, [location.state]);
+
+  const filterImages = useCallback((filter) => {
+    setCurrentFilter(filter);
+  }, []);
 
   const openImageViewer = useCallback((index) => {
     setCurrentImage(index);

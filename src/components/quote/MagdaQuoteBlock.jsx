@@ -8,7 +8,10 @@ const MagdaQuoteBlock = () => {
 
   return (
     <div className="relative z-10 mt-32 bg-gray-900 pb-20 sm:mt-56 sm:pb-24 xl:pb-0">
-      <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
+      <div
+        className="absolute inset-0 overflow-hidden h-full"
+        aria-hidden="true"
+      >
         <div className="absolute left-[calc(50%-19rem)] top-[calc(50%-36rem)] transform-gpu blur-3xl">
           <div
             className="aspect-[1097/1023] w-[68.5625rem] bg-gradient-to-r from-[#ff4694] to-[#776fff] opacity-25"
@@ -21,11 +24,11 @@ const MagdaQuoteBlock = () => {
       </div>
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
         <div className="-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
-          <div className="relative  h-full md:-mx-8 xl:mx-0 xl:aspect-auto aspect-[1/1]">
+          <div className="relative h-full md:-mx-8 xl:mx-0 xl:aspect-auto aspect-[1/1]">
             <img
               className="absolute inset-0 h-full w-full rounded-full bg-gray-800 object-cover shadow-2xl"
-              src="assets/images/GeraldM.png"
-              alt="Gerald Meyer"
+              src="assets/images/MagdaTorch.jpg"
+              alt="Magda Vasillov"
             />
           </div>
         </div>

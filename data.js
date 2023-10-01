@@ -1803,3 +1803,23 @@ export const data = [
     imagePath: "assets/images/StreetScenes149th.jpg",
   },
 ];
+
+
+const test = [
+  {
+    Name: "Shirley Chisholm",
+    Title: "Hostos Moments",
+    Date: "1968-2008",
+    Collection: "https://www.jstor.org/site/hostos/hostos-moments1968-2008",
+    href: "",
+    imagePath: "assets/images/Name.jpg",
+  },
+  {
+    Name: "Name",
+    Title: "Magda Vasillov",
+    Date: "1973",
+    Collection: "https://www.jstor.org/site/hostos/magda-vasillov-photographs",
+    href: "",
+    imagePath: "assets/images/Name.jpg",
+  },
+];

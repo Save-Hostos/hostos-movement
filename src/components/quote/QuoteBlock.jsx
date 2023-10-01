@@ -7,7 +7,7 @@ const QuoteBlock = () => {
   };
 
   return (
-    <div className="relative z-50 mt-32 bg-gray-900 pb-20 sm:mt-56 sm:pb-24 xl:pb-0">
+    <div className="relative z-10 mt-32 bg-gray-900 pb-20 sm:mt-56 sm:pb-24 xl:pb-0">
       <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
         <div className="absolute left-[calc(50%-19rem)] top-[calc(50%-36rem)] transform-gpu blur-3xl">
           <div
@@ -21,7 +21,7 @@ const QuoteBlock = () => {
       </div>
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
         <div className="-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
-          <div className="relative  h-full md:-mx-8 xl:mx-0 xl:aspect-auto aspect-[1/1]">
+          <div className="relative h-full md:-mx-8 xl:mx-0 xl:aspect-auto aspect-[1/1]">
             <img
               className="absolute inset-0 h-full w-full rounded-full bg-gray-800 object-cover shadow-2xl"
               src="assets/images/GeraldM.png"
@@ -50,7 +50,8 @@ const QuoteBlock = () => {
                 the 1970s fiscal crisis as chair of the Save Hostos Committee.
                 Meyer established the Gay and Lesbian Club, Hostos Solidarity
                 Coalition, and The Circle of 100 Scholarship and Emergency Fund
-                during his decades of service.
+                during his decades of service.{" "}
+                <span className="opacity-0">Gerald Gerald Gerald Gerald</span>
               </p>
             </blockquote>
             <figcaption className="mt-8 text-base flex justify-between items-center">
