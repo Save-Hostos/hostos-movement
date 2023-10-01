@@ -6,6 +6,13 @@ export default function Hero() {
     window.scrollTo(0, 0);
   };
 
+  const scrollToId = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="relative overflow-hidden bg-gray-900 min-h-screen flex flex-col justify-center sm:pb-20">
       {/* Video as the background */}
@@ -40,6 +47,13 @@ export default function Hero() {
               >
                 Explore The Collection
               </Link>
+              <button
+                to="/gallery"
+                className="rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6 text-white shadow-sm border border-white hover:bg-orange hover:border-orange ease-in transition duration-200"
+                onClick={() => scrollToId("theMovement")}
+              >
+                Read The Story
+              </button>
             </div>
           </div>
         </div>

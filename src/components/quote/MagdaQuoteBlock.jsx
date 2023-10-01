@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 
-const QuoteBlock = () => {
+const MagdaQuoteBlock = () => {
   // Function to scroll to the top of the page
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
 
   return (
-    <div className="relative z-50 mt-32 bg-gray-900 pb-20 sm:mt-56 sm:pb-24 xl:pb-0">
+    <div className="relative z-10 mt-32 bg-gray-900 pb-20 sm:mt-56 sm:pb-24 xl:pb-0">
       <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
         <div className="absolute left-[calc(50%-19rem)] top-[calc(50%-36rem)] transform-gpu blur-3xl">
           <div
@@ -45,16 +45,17 @@ const QuoteBlock = () => {
             </svg>
             <blockquote className="text-xl leading-8 text-white sm:text-2xl sm:leading-9">
               <p>
-                Gerald Meyer was a founding faculty member at Hostos Community
-                College. He played a key role in keeping the college open during
-                the 1970s fiscal crisis as chair of the Save Hostos Committee.
-                Meyer established the Gay and Lesbian Club, Hostos Solidarity
-                Coalition, and The Circle of 100 Scholarship and Emergency Fund
-                during his decades of service.
+                Magda J. Vasillov was a photographer, art historian, and teacher
+                who spent her career at Hostos Community College in the South
+                Bronx. After graduating from Wellesley College and the Institute
+                of Fine Arts at NYU, Vasillov was hired at Hostos in 1970 as the
+                college photographer. Vasillov later earned tenure, chaired the
+                Humanities Department, and actively participated in college
+                committees.
               </p>
             </blockquote>
             <figcaption className="mt-8 text-base flex justify-between items-center">
-              <div className="font-semibold text-white">Gerald Meyer</div>
+              <div className="font-semibold text-white"> Magda J. Vasillov</div>
               <Link
                 to="/founders"
                 className="rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6  text-white shadow-sm border border-white hover:bg-orange hover:border-orange ease-in transition duration-200"
@@ -71,4 +72,4 @@ const QuoteBlock = () => {
   );
 };
 
-export default QuoteBlock;
+export default MagdaQuoteBlock;
