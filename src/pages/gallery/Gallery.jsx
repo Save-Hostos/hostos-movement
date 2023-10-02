@@ -16,6 +16,8 @@ const Gallery = () => {
     location.state ? location.state : "all"
   );
 
+  console.log("location state: ", location.state);
+
   const [filteredData, setFilteredData] = useState([]);
   const images = filteredData.map(({ imagePath }) => imagePath);
 
