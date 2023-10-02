@@ -36,12 +36,12 @@ function Landing() {
                 The Movement
               </h2>
               <p className="mt-6 text-xl leading-8 text-gray-600 lg:text-lg">
-                The Save Hostos Movement was a mass struggle from 1973-1978 by
-                students, staff, faculty and the South Bronx community to secure
-                facilities and prevent the closure of Eugenio María de Hostos
-                Community College during New York City’s fiscal crisis. Their
-                occupation, protest and political tactics won the college&#39;s
-                future.
+                The Save Hostos Movement (CUNY) was a mass struggle from
+                1973-1978 by students, staff, faculty and the South Bronx
+                community to secure facilities and prevent the closure of
+                Eugenio María de Hostos Community College during New York City’s
+                fiscal crisis. Their occupation, protest and political tactics
+                won the college&#39;s future.
               </p>
               <p className="mt-6 text-base leading-7 text-gray-600 mb-5 lg:text-lg">
                 For five years, the Save Hostos Movement united the campus and
@@ -54,6 +54,7 @@ function Landing() {
                 coalition-building for access to higher education and justice.
               </p>
               <a
+                title="You will be transferred to CDHA website in a new tab."
                 href="https://cdha.cuny.edu/collections/show/172"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -61,6 +62,9 @@ function Landing() {
               >
                 Read More
               </a>
+              <p className="text-xs text-gray-500 mt-4">
+                (You will be redirected to the CDHA website)
+              </p>
             </div>
 
             <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">

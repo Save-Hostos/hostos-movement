@@ -24,11 +24,16 @@ const Header = ({ setMobileMenuOpen, mobileMenuOpen }) => {
         >
           <div className="flex lg:flex-1">
             <Link to="/" className="-m-1.5 p-1.5">
-              <div className="flex items-center">
+              <div className="flex flex-row items-center space-x-4">
                 <img
-                  className="h-24 w-auto"
+                  className="h-12 w-auto sm:h-24 md:h-24"
                   src="assets/logo/hostos-white.png"
                   alt="Hostos Logo"
+                />
+                <img
+                  className="h-10 w-auto sm:h-16 md:h-16"
+                  src="assets/logo/cuny-logo-white.png"
+                  alt="CUNY Logo"
                 />
               </div>
             </Link>

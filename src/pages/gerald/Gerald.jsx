@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 /* eslint-disable react/no-unescaped-entities */
@@ -5,6 +6,20 @@ export default function Gerald() {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  useEffect(() => {
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+      scrollToSection(hash);
+    }
+  }, []);
 
   return (
     <div className="pt-40 md:pt-40 lg:pt-40 mb-[2%] mx-[2%] lg:mx-[5%]">
@@ -110,9 +125,13 @@ export default function Gerald() {
               ></div>
             </div>
           </div>
+
           <div>
             <div className="flex flex-col sm:flex-row items-center">
-              <h1 className="mt-2 text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-gray-900">
+              <h1
+                id="magda"
+                className="mt-2 text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-gray-900"
+              >
                 Magda J. Vasillov
               </h1>
               <Link

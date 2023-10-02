@@ -162,7 +162,7 @@ const Gallery = () => {
         className="fixed bottom-4 right-4 p-2 bg-gray-900 text-white rounded-full cursor-pointer"
         style={{ width: "60px", height: "60px" }}
       >
-        🢁
+        ☝️
       </button>
     </div>
   );
