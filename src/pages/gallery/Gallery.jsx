@@ -13,10 +13,10 @@ const Gallery = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
   const [currentFilter, setCurrentFilter] = useState(
-    location.state ? location.state : "all"
+    location.state
+      ? location.state
+      : localStorage.getItem("galleryFilter") || "all"
   );
-
-  console.log("location state: ", location.state);
 
   const [filteredData, setFilteredData] = useState([]);
   const images = filteredData.map(({ imagePath }) => imagePath);
@@ -41,16 +41,23 @@ const Gallery = () => {
   }, [currentFilter, navigate]);
 
   useEffect(() => {
-    const filter = location.state ? location.state : "all";
-    if (filter === "all") {
+    const initialFilter = location.state
+      ? location.state
+      : localStorage.getItem("galleryFilter") || "all";
+    if (initialFilter === "all") {
       setFilteredData([...data]);
     } else {
-      setFilteredData([...data.filter((image) => image.Title === filter)]);
+      setFilteredData([
+        ...data.filter((image) => image.Title === initialFilter),
+      ]);
     }
+    // Store the initial filter in localStorage
+    localStorage.setItem("galleryFilter", initialFilter);
   }, [location.state]);
 
   const filterImages = useCallback((filter) => {
     setCurrentFilter(filter);
+    localStorage.setItem("galleryFilter", filter);
   }, []);
 
   const openImageViewer = useCallback((index) => {
