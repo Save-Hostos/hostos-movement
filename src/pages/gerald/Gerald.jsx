@@ -1,19 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { scrollToTop, scrollToSection } from "../../utils/scroll";
 
-/* eslint-disable react/no-unescaped-entities */
 export default function Gerald() {
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
-
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   useEffect(() => {
     const hash = window.location.hash.substring(1);
     if (hash) {
@@ -25,7 +15,7 @@ export default function Gerald() {
     <div className="pt-40 md:pt-40 lg:pt-40 mb-[2%] mx-[2%] lg:mx-[5%]">
       <div className="mx-auto px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center">
-          {/* Image Container */}
+          {/* Gerald — Image */}
           <div className="lg:pr-4 flex flex-col items-center">
             <div className="relative overflow-hidden rounded-3xl bg-gray-900 w-full h-[600px] shadow-2xl">
               <img
@@ -33,31 +23,32 @@ export default function Gerald() {
                 src="assets/images/YoungM.jpg"
                 alt="Young Gerald Meyers"
               />
-
               <div
                 className="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2 transform-gpu blur-3xl"
                 aria-hidden="true"
               ></div>
             </div>
           </div>
+
+          {/* Gerald — Text */}
           <div>
             <div className="flex flex-col sm:flex-row items-center">
-              <h1 className="mt-2 text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-gray-900">
+              <h2 className="mt-2 text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-gray-900">
                 Gerald Meyer
-              </h1>
+              </h2>
               <Link
                 to="/gallery"
                 state="Hostos Moments"
-                className="mt-4 sm:mt-0 sm:ml-4 rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6 text-orange shadow-sm border border-orange hover:bg-orange hover:border-orange hover:text-white ease-in transition duration-200"
+                className="mt-4 sm:mt-0 sm:ml-4 rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6 text-orange shadow-sm border border-orange hover:bg-orange hover:border-orange hover:text-white ease-in transition duration-200 focus:outline-none focus:ring-2 focus:ring-orange focus:ring-offset-2"
                 onClick={scrollToTop}
               >
                 View Collection
               </Link>
             </div>
 
-            <div className="lg:flex  text-base leading-7 text-gray-700 lg:space-x-4">
+            <div className="lg:flex text-base leading-7 text-gray-700 lg:space-x-4">
               <div className="lg:flex-1">
-                <p className="mt-6 mb-6 text-xl lg:text-lg ">
+                <p className="mt-6 mb-6 text-xl lg:text-lg">
                   Dr. Gerald Meyer (5 June 1940—10 November 2021), was a
                   founding member of the faculty at Hostos Community
                   College/City University of New York. Initially a historian, he
@@ -67,9 +58,9 @@ export default function Gerald() {
                   Education threatened its existence during the mid-1970s New
                   York City fiscal crisis. Meyer joined the Hostos faculty in
                   1972 and immediately became active in the political life of
-                  the college. Recognizing the school’s significance, he began
+                  the college. Recognizing the school's significance, he began
                   saving newsletters, articles and correspondence that
-                  documented the fledgling college’s existence. He would not
+                  documented the fledgling college's existence. He would not
                   have to wait long before being given the chance to put his
                   political organizing skills and charismatic manner to work.
                   After retirement he remained a Professor Emeritus at Hostos,
@@ -110,43 +101,43 @@ export default function Gerald() {
               </div>
             </div>
           </div>
-          {/* Image Container */}
-          <div className="lg:pr-4 flex flex-col items-center">
-            <div className="relative overflow-hidden rounded-3xl bg-gray-900 w-full h-[600px] shadow-2xl">
-              <img
-                className="absolute inset-0 h-full w-full object-cover brightness-125 saturate-0"
-                src="assets/images/MagdaTorch.jpg"
-                alt="Young Magda Vasillov"
-              />
 
-              <div
-                className="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2 transform-gpu blur-3xl"
-                aria-hidden="true"
-              ></div>
+          {/* Magda — Text column (col 1 row 2 on desktop).
+              Mobile stack: Image → Heading+button → Content (matching Gerald) */}
+          <div className="lg:col-start-1 lg:row-start-2">
+            {/* Mobile/tablet image — above heading, hidden on lg+ */}
+            <div className="mb-8 lg:hidden">
+              <div className="relative overflow-hidden rounded-3xl bg-gray-900 w-full h-[400px] sm:h-[500px] shadow-2xl">
+                <img
+                  className="absolute inset-0 h-full w-full object-cover brightness-125 saturate-0"
+                  src="assets/images/MagdaTorch.jpg"
+                  alt="Young Magda Vasillov"
+                />
+              </div>
             </div>
-          </div>
 
-          <div>
+            {/* Heading + button */}
             <div className="flex flex-col sm:flex-row items-center">
-              <h1
+              <h2
                 id="magda"
                 className="mt-2 text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-gray-900"
               >
                 Magda J. Vasillov
-              </h1>
+              </h2>
               <Link
                 to="/gallery"
                 state="Magda Vasillov"
-                className="mt-4 sm:mt-0 sm:ml-4 rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6 text-orange shadow-sm border border-orange hover:bg-orange hover:border-orange hover:text-white ease-in transition duration-200"
+                className="mt-4 sm:mt-0 sm:ml-4 rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6 text-orange shadow-sm border border-orange hover:bg-orange hover:border-orange hover:text-white ease-in transition duration-200 focus:outline-none focus:ring-2 focus:ring-orange focus:ring-offset-2"
                 onClick={scrollToTop}
               >
                 View Collection
               </Link>
             </div>
 
-            <div className="lg:flex  text-base leading-7 text-gray-700 lg:space-x-4">
+            {/* Body text */}
+            <div className="lg:flex text-base leading-7 text-gray-700 lg:space-x-4">
               <div className="lg:flex-1">
-                <p className="mt-6  mb-6 text-xl lg:text-lg">
+                <p className="mt-6 mb-6 text-xl lg:text-lg">
                   Magda J. Vasillov was a photographer, art historian and
                   teacher whom made her career at Hostos Community College, City
                   University of New York, located in the South Bronx. Vasillov
@@ -160,7 +151,7 @@ export default function Gerald() {
                   she married professional photographer Bill Vasillov. In the
                   immediate years that followed, Vasillov gave birth to three
                   daughters—Natasha, Susanna, and Marya. Shortly after the birth
-                  of their third child, Vasillov’s husband suffered a heart
+                  of their third child, Vasillov's husband suffered a heart
                   attack and passed away leaving Magda as sole provider.
                   Vasillov later returned to the Institute of Fine Arts and
                   earned her graduate degree in 1980.
@@ -168,13 +159,13 @@ export default function Gerald() {
                 <p className="mt-6 mb-6 text-xl lg:text-lg">
                   While at Hostos, Vasillov served the college community in many
                   different roles. In 1970, Vasillov was initially hired as the
-                  college’s photographer. She established a darkroom at the
+                  college's photographer. She established a darkroom at the
                   college, which quickly received a great deal of attention from
                   the student body. Shortly after, Vasillov began teaching a
                   course on photography and dark room methods. Vasillov went on
                   to serve as a lecturer in Arts and Civilization. After
-                  obtaining her graduate degree and exhibiting her “Faces of
-                  Hostos” project at the Bronx Museum in 1980, Vasillov secured
+                  obtaining her graduate degree and exhibiting her "Faces of
+                  Hostos" project at the Bronx Museum in 1980, Vasillov secured
                   tenure at the college and became a permanent member of the
                   faculty.
                 </p>
@@ -184,12 +175,27 @@ export default function Gerald() {
                   Committee, various other college committees and tasks forces,
                   and as the Chair of the Humanities Department. In 2006, the
                   college Senate voted to name the Center for Teaching and
-                  Learning, “The Magda Vasillov Center for Teaching and
-                  Learning,” in memory of Vasillov’s long successful career at
+                  Learning, "The Magda Vasillov Center for Teaching and
+                  Learning," in memory of Vasillov's long successful career at
                   Hostos. The center was dedicated in January of 2007—two months
                   after her passing in November of 2006.
                 </p>
               </div>
+            </div>
+          </div>
+
+          {/* Magda — Image column (col 2 row 2, desktop only) */}
+          <div className="hidden lg:flex lg:col-start-2 lg:row-start-2 lg:pl-4 flex-col items-center">
+            <div className="relative overflow-hidden rounded-3xl bg-gray-900 w-full h-[600px] shadow-2xl">
+              <img
+                className="absolute inset-0 h-full w-full object-cover brightness-125 saturate-0"
+                src="assets/images/MagdaTorch.jpg"
+                alt="Young Magda Vasillov"
+              />
+              <div
+                className="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2 transform-gpu blur-3xl"
+                aria-hidden="true"
+              ></div>
             </div>
           </div>
         </div>

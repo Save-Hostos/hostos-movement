@@ -1,11 +1,7 @@
 import { Link } from "react-router-dom";
+import { scrollToTop } from "../../utils/scroll";
 
 const QuoteBlock = () => {
-  // Function to scroll to the top of the page
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
-
   return (
     <div className="relative z-10 mt-32 bg-gray-900 pb-20 sm:mt-56 sm:pb-24 xl:pb-0">
       <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
@@ -21,7 +17,7 @@ const QuoteBlock = () => {
       </div>
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
         <div className="-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
-          <div className="relative h-full md:-mx-8 xl:mx-0 xl:aspect-auto aspect-[1/1]">
+          <div className="relative h-full xl:mx-0 xl:aspect-auto aspect-[1/1]">
             <img
               className="absolute inset-0 h-full w-full rounded-full bg-gray-800 object-cover shadow-2xl"
               src="assets/images/GeraldM.png"
@@ -58,7 +54,7 @@ const QuoteBlock = () => {
               <div className="font-semibold text-white">Gerald Meyer</div>
               <Link
                 to="/founders"
-                className="rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6  text-white shadow-sm border border-white hover:bg-orange hover:border-orange ease-in transition duration-200"
+                className="rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6 text-white shadow-sm border border-white hover:bg-orange hover:border-orange ease-in transition duration-200 focus:outline-none focus:ring-2 focus:ring-white"
                 onClick={scrollToTop}
               >
                 Learn more <span aria-hidden="true">→</span>

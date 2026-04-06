@@ -9,14 +9,18 @@ function Root() {
 
   return (
     <>
+      <a href="#main-content" className="skip-to-content">
+        Skip to main content
+      </a>
+
       {/* HEADER */}
       <Header
         mobileMenuOpen={mobileMenuOpen}
         setMobileMenuOpen={setMobileMenuOpen}
       />
 
-      {/* LANDING PAGE */}
-      <main className="mx-auto min-h-screen">
+      {/* PAGE CONTENT */}
+      <main id="main-content" className="mx-auto min-h-screen">
         <Outlet />
       </main>
 

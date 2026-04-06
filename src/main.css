@@ -5,6 +5,41 @@
 @tailwind utilities;
 
 .slick-slide {
-  margin-bottom: 100px !important;
-  background-color: #f5f5f5 !important;
+  background-color: transparent !important;
+}
+
+/* Scroll lock applied when image viewer is open */
+body.scroll-locked {
+  overflow: hidden;
+}
+
+/* Skip-to-content accessibility link */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: 1rem;
+  z-index: 9999;
+  padding: 0.5rem 1rem;
+  background: white;
+  color: #111827;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.15);
+  text-decoration: none;
+}
+
+.skip-to-content:focus {
+  left: 1rem;
+  outline: 2px solid #ed8b00;
+  outline-offset: 2px;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

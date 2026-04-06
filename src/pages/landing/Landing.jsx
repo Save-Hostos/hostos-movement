@@ -1,4 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
+import { useRef } from "react";
+import {
+  ArrowTopRightOnSquareIcon,
+  InformationCircleIcon,
+  ChevronLeftIcon,
+  ChevronRightIcon,
+} from "@heroicons/react/24/outline";
 import MagdaQuoteBlock from "../../components/quote/MagdaQuoteBlock";
 import QuoteBlock from "../../components/quote/QuoteBlock";
 import Hero from "../hero/Hero";
@@ -8,6 +15,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function Landing() {
+  const sliderRef = useRef(null);
+
   const settings = {
     arrows: false,
     dots: false,
@@ -15,11 +24,11 @@ function Landing() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 9500,
-    pauseOnHover: false,
-    fade: true,
+    autoplay: false,
+    swipe: true,
+    accessibility: true,
   };
+
   return (
     <>
       {/* Hero section */}
@@ -39,7 +48,7 @@ function Landing() {
                 The Save Hostos Movement (CUNY) was a mass struggle from
                 1973-1978 by students, staff, faculty and the South Bronx
                 community to secure facilities and prevent the closure of
-                Eugenio María de Hostos Community College during New York City’s
+                Eugenio María de Hostos Community College during New York City's
                 fiscal crisis. Their occupation, protest and political tactics
                 won the college&#39;s future.
               </p>
@@ -53,25 +62,40 @@ function Landing() {
                 movement profoundly shaped Hostos&#39; culture of activism and
                 coalition-building for access to higher education and justice.
               </p>
-              <a
-                title="You will be transferred to CDHA website in a new tab."
-                href="https://cdha.cuny.edu/collections/show/172"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6 text-black shadow-sm border border-orange bg-orange hover:text-[#F5F5F5] transition duration-200 hover:bg-opacity-80"
-              >
-                Read More
-              </a>
-              <p className="text-xs text-gray-500 mt-4">
-                (You will be redirected to the CDHA website)
-              </p>
+
+              {/* Read More — external link with inline redirect notice */}
+              <div className="flex flex-col items-start gap-3">
+                <a
+                  href="https://cdha.cuny.edu/collections/show/172"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-describedby="cdha-note"
+                  className="inline-flex items-center gap-2 rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6 text-black shadow-sm border border-orange bg-orange hover:text-white hover:bg-opacity-80 transition duration-200 focus:outline-none focus:ring-2 focus:ring-orange focus:ring-offset-2"
+                >
+                  Read More
+                  <ArrowTopRightOnSquareIcon
+                    className="w-4 h-4"
+                    aria-hidden="true"
+                  />
+                </a>
+                <p
+                  id="cdha-note"
+                  className="flex items-center gap-1.5 text-xs text-gray-500"
+                >
+                  <InformationCircleIcon
+                    className="w-3.5 h-3.5 flex-shrink-0"
+                    aria-hidden="true"
+                  />
+                  Opens the CDHA archive in a new tab
+                </p>
+              </div>
             </div>
 
             <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
               <div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
                 <img
                   src="assets/images/SerranoSpeech.jpg"
-                  alt="Serrano’s Speech Outside 475 Building"
+                  alt="Serrano's Speech Outside 475 Building"
                   className="aspect-[7/5] w-[37rem] h-[37rem] max-w-none rounded-full bg-gray-50 object-cover"
                 />
               </div>
@@ -102,28 +126,61 @@ function Landing() {
           </div>
         </div>
       </div>
-      {/* Quote section */}
-      <div>
-        <Slider {...settings}>
-          <QuoteBlock />
+      {/* Quote carousel with manual prev/next navigation */}
+      <div className="relative">
+        {/* Side arrows — lg and above only, where there's room beside the content */}
+        <button
+          type="button"
+          onClick={() => sliderRef.current.slickPrev()}
+          className="hidden lg:flex absolute left-4 xl:left-6 top-1/2 -translate-y-1/2 z-20 items-center justify-center w-12 h-12 rounded-full bg-white/10 hover:bg-white/25 text-white border border-white/20 backdrop-blur-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white"
+          aria-label="Previous quote"
+        >
+          <ChevronLeftIcon className="w-6 h-6" aria-hidden="true" />
+        </button>
 
+        <Slider ref={sliderRef} {...settings}>
+          <QuoteBlock />
           <MagdaQuoteBlock />
         </Slider>
+
+        <button
+          type="button"
+          onClick={() => sliderRef.current.slickNext()}
+          className="hidden lg:flex absolute right-4 xl:right-6 top-1/2 -translate-y-1/2 z-20 items-center justify-center w-12 h-12 rounded-full bg-white/10 hover:bg-white/25 text-white border border-white/20 backdrop-blur-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white"
+          aria-label="Next quote"
+        >
+          <ChevronRightIcon className="w-6 h-6" aria-hidden="true" />
+        </button>
+
+        {/* Bottom-center arrows — sm and md only, sits flush in the dark section */}
+        <div className="lg:hidden flex justify-center items-center gap-6 bg-gray-900 pt-2 pb-8">
+          <button
+            type="button"
+            onClick={() => sliderRef.current.slickPrev()}
+            className="flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/25 text-white border border-white/20 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white"
+            aria-label="Previous quote"
+          >
+            <ChevronLeftIcon className="w-5 h-5" aria-hidden="true" />
+          </button>
+          <button
+            type="button"
+            onClick={() => sliderRef.current.slickNext()}
+            className="flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/25 text-white border border-white/20 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white"
+            aria-label="Next quote"
+          >
+            <ChevronRightIcon className="w-5 h-5" aria-hidden="true" />
+          </button>
+        </div>
       </div>
       <div className="px-6 py-24 sm:py-32 lg:px-8">
-        <div className="mx-auto text-center mt-[-100px]">
-          <h2
-            className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl xl:text-6xl"
-            style={{ maxWidth: "100%" }}
-          >
+        <div className="mx-auto max-w-2xl text-center">
+          <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
             Thank you!
           </h2>
-          <div className="max-w-2xl mx-auto">
-            <p className="mt-6 text-xl leading-8 text-gray-600">
-              Educating for Diversity Grant made possible by the Ms. MacKenzie
-              Scott's Gift: President's Initiatives.
-            </p>
-          </div>
+          <p className="mt-6 text-xl leading-8 text-gray-600">
+            Educating for Diversity Grant made possible by the Ms. MacKenzie
+            Scott's Gift: President's Initiatives.
+          </p>
         </div>
       </div>
     </>

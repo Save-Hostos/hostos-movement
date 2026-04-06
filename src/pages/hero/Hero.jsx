@@ -1,32 +1,22 @@
 import { Link } from "react-router-dom";
+import { scrollToTop, scrollToSection } from "../../utils/scroll";
 
 export default function Hero() {
-  // Function to scroll to the top of the page
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
-
-  const scrollToId = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <div className="relative overflow-hidden bg-gray-900 min-h-screen flex flex-col justify-center sm:pb-20">
-      {/* Video as the background */}
+      {/* Decorative background video */}
       <video
         src="assets/video/hostovemovement.mp4"
-        alt="Collection Video"
         className="absolute inset-0 z-0 h-full w-full object-cover"
         muted
         loop
         autoPlay
         playsInline
+        aria-hidden="true"
+        tabIndex={-1}
       />
       {/* Overlay tint */}
-      <div className="absolute inset-0 z-10 bg-black opacity-[65%]"></div>{" "}
+      <div className="absolute inset-0 z-10 bg-black opacity-[65%]" aria-hidden="true" />
       {/* Text content */}
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8 z-20">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
@@ -42,15 +32,15 @@ export default function Hero() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
                 to="/gallery"
-                className="rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6 text-white shadow-sm border border-white hover:bg-orange hover:border-orange ease-in transition duration-200"
+                className="rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6 text-white shadow-sm border border-white hover:bg-orange hover:border-orange ease-in transition duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black"
                 onClick={scrollToTop}
               >
                 Explore The Collection
               </Link>
               <button
-                to="/gallery"
-                className="rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6 text-white shadow-sm border border-white hover:bg-orange hover:border-orange ease-in transition duration-200"
-                onClick={() => scrollToId("theMovement")}
+                type="button"
+                className="rounded-md px-3.5 py-2.5 text-sm font-semibold leading-6 text-white shadow-sm border border-white hover:bg-orange hover:border-orange ease-in transition duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black"
+                onClick={() => scrollToSection("theMovement")}
               >
                 Read The Story
               </button>
