@@ -17,7 +17,7 @@ export default function Gerald() {
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center">
           {/* Gerald — Image */}
           <div className="lg:pr-4 flex flex-col items-center">
-            <div className="relative overflow-hidden rounded-3xl bg-gray-900 w-full h-[600px] shadow-2xl">
+            <div className="relative overflow-hidden rounded-3xl bg-gray-900 w-full h-[400px] sm:h-[500px] lg:h-[600px] shadow-2xl">
               <img
                 className="absolute inset-0 h-full w-full object-cover brightness-125 saturate-0"
                 src="assets/images/YoungM.jpg"

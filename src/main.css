@@ -8,6 +8,14 @@
   background-color: transparent !important;
 }
 
+.quote-slider .slick-slide > div,
+.quote-slider .slick-slide > div > div {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
 /* Scroll lock applied when image viewer is open */
 body.scroll-locked {
   overflow: hidden;

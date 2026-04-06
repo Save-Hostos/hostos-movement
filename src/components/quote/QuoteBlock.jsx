@@ -16,7 +16,7 @@ const QuoteBlock = () => {
         </div>
       </div>
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
-        <div className="-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
+        <div className="-mt-8 xl:mt-0 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
           <div className="relative h-full xl:mx-0 xl:aspect-auto aspect-[1/1]">
             <img
               className="absolute inset-0 h-full w-full rounded-full bg-gray-800 object-cover shadow-2xl"

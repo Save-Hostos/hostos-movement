@@ -126,37 +126,36 @@ function Landing() {
           </div>
         </div>
       </div>
-      {/* Quote carousel with manual prev/next navigation */}
-      <div className="relative">
-        {/* Side arrows — lg and above only, where there's room beside the content */}
-        <button
-          type="button"
-          onClick={() => sliderRef.current.slickPrev()}
-          className="hidden lg:flex absolute left-4 xl:left-6 top-1/2 -translate-y-1/2 z-20 items-center justify-center w-12 h-12 rounded-full bg-white/10 hover:bg-white/25 text-white border border-white/20 backdrop-blur-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white"
-          aria-label="Previous quote"
-        >
-          <ChevronLeftIcon className="w-6 h-6" aria-hidden="true" />
-        </button>
-
+      {/* Quote carousel with arrows outside slick to avoid aria-hidden issues */}
+      <div className="relative quote-slider">
         <Slider ref={sliderRef} {...settings}>
           <QuoteBlock />
           <MagdaQuoteBlock />
         </Slider>
 
+        {/* Side arrows — lg+ only, positioned over the dark section */}
         <button
           type="button"
-          onClick={() => sliderRef.current.slickNext()}
-          className="hidden lg:flex absolute right-4 xl:right-6 top-1/2 -translate-y-1/2 z-20 items-center justify-center w-12 h-12 rounded-full bg-white/10 hover:bg-white/25 text-white border border-white/20 backdrop-blur-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white"
+          onClick={() => sliderRef.current?.slickPrev()}
+          className="hidden lg:flex absolute left-4 xl:left-6 top-[calc(50%+7rem)] -translate-y-1/2 z-20 items-center justify-center w-12 h-12 rounded-full bg-white/10 hover:bg-white/25 text-white border border-white/20 backdrop-blur-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white"
+          aria-label="Previous quote"
+        >
+          <ChevronLeftIcon className="w-6 h-6" aria-hidden="true" />
+        </button>
+        <button
+          type="button"
+          onClick={() => sliderRef.current?.slickNext()}
+          className="hidden lg:flex absolute right-4 xl:right-6 top-[calc(50%+7rem)] -translate-y-1/2 z-20 items-center justify-center w-12 h-12 rounded-full bg-white/10 hover:bg-white/25 text-white border border-white/20 backdrop-blur-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white"
           aria-label="Next quote"
         >
           <ChevronRightIcon className="w-6 h-6" aria-hidden="true" />
         </button>
 
-        {/* Bottom-center arrows — sm and md only, sits flush in the dark section */}
+        {/* Bottom-center arrows — sm and md only */}
         <div className="lg:hidden flex justify-center items-center gap-6 bg-gray-900 pt-2 pb-8">
           <button
             type="button"
-            onClick={() => sliderRef.current.slickPrev()}
+            onClick={() => sliderRef.current?.slickPrev()}
             className="flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/25 text-white border border-white/20 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white"
             aria-label="Previous quote"
           >
@@ -164,7 +163,7 @@ function Landing() {
           </button>
           <button
             type="button"
-            onClick={() => sliderRef.current.slickNext()}
+            onClick={() => sliderRef.current?.slickNext()}
             className="flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/25 text-white border border-white/20 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white"
             aria-label="Next quote"
           >
@@ -172,7 +171,7 @@ function Landing() {
           </button>
         </div>
       </div>
-      <div className="px-6 py-24 sm:py-32 lg:px-8">
+      <div className="relative z-0 px-6 py-24 sm:py-32 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
             Thank you!
